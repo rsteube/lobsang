@@ -3,6 +3,8 @@ package cmd
 import (
 	"github.com/rsteube/carapace"
 	"github.com/rsteube/carapace-bin/pkg/actions/time"
+	"github.com/rsteube/carapace/pkg/style"
+	"github.com/rsteube/lobsang/cmd/lobsang/cmd/action"
 	"github.com/spf13/cobra"
 )
 
@@ -13,12 +15,20 @@ var addCmd = &cobra.Command{
 }
 
 func init() {
-	carapace.Gen(addCmd).Standalone()
-
+	addCmd.Flags().String("tags", "", "tags for entry")
 	rootCmd.AddCommand(addCmd)
 
+	carapace.Gen(addCmd).FlagCompletion(carapace.ActionMap{
+		"tags": carapace.ActionMultiParts(",", func(c carapace.Context) carapace.Action {
+			if len(c.Args) < 1 {
+				return carapace.ActionMessage("missing project")
+			}
+			return action.ActionTags(c.Args[0]).Invoke(c).Filter(c.Parts).ToA()
+		}),
+	})
+
 	carapace.Gen(addCmd).PositionalCompletion(
-		carapace.ActionValues("TODO-projectA", "TODO-projectB"),
+		action.ActionProjects(),
 		ActionDate(),
 		ActionDuration(),
 	)
@@ -26,7 +36,7 @@ func init() {
 
 func ActionDate() carapace.Action {
 	return carapace.Batch(
-		carapace.ActionValues("monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"),
+		carapace.ActionValues("monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday", "today", "yesterday").Style(style.Blue),
 		time.ActionDate(),
 	).ToA()
 }
