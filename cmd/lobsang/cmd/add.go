@@ -1,6 +1,8 @@
 package cmd
 
 import (
+	"unicode"
+
 	"github.com/rsteube/carapace"
 	"github.com/rsteube/carapace-bin/pkg/actions/time"
 	"github.com/rsteube/carapace/pkg/style"
@@ -35,10 +37,17 @@ func init() {
 }
 
 func ActionDate() carapace.Action {
-	return carapace.Batch(
-		carapace.ActionValues("monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday", "today", "yesterday").Style(style.Blue),
-		time.ActionDate(),
-	).ToA()
+	return carapace.ActionCallback(func(c carapace.Context) carapace.Action {
+		batch := carapace.Batch(
+			carapace.ActionValues("monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday", "today", "yesterday").Style(style.Blue),
+		)
+
+		if len(c.CallbackValue) > 0 && unicode.IsDigit([]rune(c.CallbackValue)[0]) {
+			batch = append(batch, time.ActionDate())
+		}
+
+		return batch.ToA()
+	})
 }
 
 func ActionDuration() carapace.Action {
