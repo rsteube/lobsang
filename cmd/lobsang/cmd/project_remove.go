@@ -14,6 +14,5 @@ var project_removeCmd = &cobra.Command{
 func init() {
 	carapace.Gen(project_removeCmd).Standalone()
 
-
 	projectCmd.AddCommand(project_removeCmd)
 }

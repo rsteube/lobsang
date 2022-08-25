@@ -14,6 +14,5 @@ var project_addCmd = &cobra.Command{
 func init() {
 	carapace.Gen(project_addCmd).Standalone()
 
-
 	projectCmd.AddCommand(project_addCmd)
 }

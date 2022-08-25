@@ -11,16 +11,16 @@ import (
 var project_listCmd = &cobra.Command{
 	Use:   "list",
 	Short: "list projects",
-	RunE:   func(cmd *cobra.Command, args []string) error {
-      projects, err := storage.Projects()
-      if err != nil {
-        return err
-      }
-      for name, project := range projects {
-        fmt.Printf("%v: %v\n", name, project.Description)
-      }
-      return nil
-    },
+	RunE: func(cmd *cobra.Command, args []string) error {
+		projects, err := storage.Projects()
+		if err != nil {
+			return err
+		}
+		for name, project := range projects {
+			fmt.Printf("%v: %v\n", name, project.Description)
+		}
+		return nil
+	},
 }
 
 func init() {
