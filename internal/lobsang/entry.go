@@ -7,8 +7,8 @@ import (
 )
 
 type Entry struct {
-	Duration time.Duration
 	Comment  string
+	Duration time.Duration
 }
 
 func (e Entry) Hash() string {
