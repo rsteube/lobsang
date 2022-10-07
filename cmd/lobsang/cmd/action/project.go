@@ -2,12 +2,12 @@ package action
 
 import (
 	"github.com/rsteube/carapace"
-	"github.com/rsteube/lobsang/internal/storage"
+	"github.com/rsteube/lobsang/internal/backend"
 )
 
-func ActionProjects() carapace.Action {
+func ActionProjects(b backend.Backend, client backend.Client) carapace.Action {
 	return carapace.ActionCallback(func(c carapace.Context) carapace.Action {
-		projects, err := storage.Projects()
+		projects, err := b.GetProjects(client)
 		if err != nil {
 			return carapace.ActionMessage(err.Error())
 		}

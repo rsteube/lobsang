@@ -26,7 +26,7 @@ func init() {
 	})
 
 	carapace.Gen(addCmd).PositionalCompletion(
-		action.ActionProjects(),
+		//action.ActionProjects(),
 		action.ActionDate(),
 		action.ActionDuration(),
 	)
