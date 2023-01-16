@@ -38,10 +38,10 @@ github.com/muesli/termenv v0.11.1-0.20220212125758-44cd13922739/go.mod h1:Bd5NYQ
 github.com/rivo/uniseg v0.1.0/go.mod h1:J6wj4VEh+S6ZtnVlnTBMWIodfgj8LQOQFoIToxlJtxc=
 github.com/rivo/uniseg v0.2.0 h1:S1pD9weZBuJdFmowNwbpi7BJ8TNftyUImj/0WQi72jY=
 github.com/rivo/uniseg v0.2.0/go.mod h1:J6wj4VEh+S6ZtnVlnTBMWIodfgj8LQOQFoIToxlJtxc=
-github.com/rsteube/carapace v0.31.0 h1:cy+AOgYgZVsQTJ6OGA0FfGQOU+EUFC+THTGrt8D9k18=
-github.com/rsteube/carapace v0.31.0/go.mod h1:/ALYHicIpak6TjQnKl7HupclqJydy2LQb6CkawYBxDo=
-github.com/rsteube/carapace-bin v0.18.1 h1:0LWGGrowCJAQPNcsHRId0x63Mk73l8qWIvkgT01rfhQ=
-github.com/rsteube/carapace-bin v0.18.1/go.mod h1:K4rdLV3ShGuVtPWmJH7arNU2spPsQeFc18/EecpFas0=
+github.com/rsteube/carapace v0.31.1 h1:6KPWunJkjuiU5I8nx/ydvI8STldhPcTl8woP5fPV7fw=
+github.com/rsteube/carapace v0.31.1/go.mod h1:/ALYHicIpak6TjQnKl7HupclqJydy2LQb6CkawYBxDo=
+github.com/rsteube/carapace-bin v0.20.2 h1:IUyRLvc18ErnxfJ6Zbx3qYT2Zqo5dw/PP042pVOHSmM=
+github.com/rsteube/carapace-bin v0.20.2/go.mod h1:RI+9RnHLKhy/cHHXT/HcH+FyXBNO83P+vWp2DdekxLA=
 github.com/russross/blackfriday/v2 v2.1.0/go.mod h1:+Rmxgy9KzJVeS9/2gXHxylqXiyQDYRxCVz55jmeOWTM=
 github.com/sahilm/fuzzy v0.1.0/go.mod h1:VFvziUEIMCrT6A6tw2RFIXPXXmzXbOsSHF0DOI8ZK9Y=
 github.com/spf13/cobra v1.6.1 h1:o94oiPyS4KD1mPy2fmcYYHHfCxLqYjJOhGsCHFZtEzA=
