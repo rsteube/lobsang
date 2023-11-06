@@ -7,7 +7,7 @@ require (
 	github.com/charmbracelet/bubbletea v0.24.2
 	github.com/rsteube/carapace v0.44.1
 	github.com/rsteube/carapace-bin v0.28.3
-	github.com/spf13/cobra v1.7.0
+	github.com/spf13/cobra v1.8.0
 )
 
 require (
