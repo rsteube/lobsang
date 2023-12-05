@@ -5,7 +5,7 @@ go 1.18
 require (
 	github.com/charmbracelet/bubbles v0.16.1
 	github.com/charmbracelet/bubbletea v0.24.2
-	github.com/rsteube/carapace v0.44.1
+	github.com/rsteube/carapace v0.46.2
 	github.com/rsteube/carapace-bin v0.28.3
 	github.com/spf13/cobra v1.8.0
 )
@@ -25,7 +25,7 @@ require (
 	github.com/muesli/reflow v0.3.0 // indirect
 	github.com/muesli/termenv v0.15.1 // indirect
 	github.com/rivo/uniseg v0.2.0 // indirect
-	github.com/rsteube/carapace-shlex v0.0.4 // indirect
+	github.com/rsteube/carapace-shlex v0.1.1 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
 	golang.org/x/mod v0.13.0 // indirect
 	golang.org/x/sync v0.1.0 // indirect
