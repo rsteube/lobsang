@@ -5,7 +5,7 @@ go 1.18
 require (
 	github.com/charmbracelet/bubbles v0.16.1
 	github.com/charmbracelet/bubbletea v0.25.0
-	github.com/rsteube/carapace v0.47.5
+	github.com/rsteube/carapace v0.48.1
 	github.com/rsteube/carapace-bin v0.28.5
 	github.com/spf13/cobra v1.8.0
 )
