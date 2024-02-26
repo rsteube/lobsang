@@ -33,8 +33,8 @@ github.com/muesli/termenv v0.15.2/go.mod h1:Epx+iuz8sNs7mNKhxzH4fWXGNpZwUaJKRS1n
 github.com/rivo/uniseg v0.1.0/go.mod h1:J6wj4VEh+S6ZtnVlnTBMWIodfgj8LQOQFoIToxlJtxc=
 github.com/rivo/uniseg v0.2.0 h1:S1pD9weZBuJdFmowNwbpi7BJ8TNftyUImj/0WQi72jY=
 github.com/rivo/uniseg v0.2.0/go.mod h1:J6wj4VEh+S6ZtnVlnTBMWIodfgj8LQOQFoIToxlJtxc=
-github.com/rsteube/carapace v0.50.0 h1:LO3ehEjcdbIx9owiyCiVfgL5A0cJPGq4X7c8V5DsA20=
-github.com/rsteube/carapace v0.50.0/go.mod h1:syVOvI8e2rEEK/9aMZxfWuHvcnQK/EcnTV4roClEnLE=
+github.com/rsteube/carapace v0.50.2 h1:9nPOBmIKPySFQvtBRGghFafRCR09Cf9K4/BEo1M+VFE=
+github.com/rsteube/carapace v0.50.2/go.mod h1:syVOvI8e2rEEK/9aMZxfWuHvcnQK/EcnTV4roClEnLE=
 github.com/rsteube/carapace-bin v0.30.2 h1:8CDKCcom3nBQT6H5CdKmce+06xNh1RpSEKFo1u9K4z4=
 github.com/rsteube/carapace-bin v0.30.2/go.mod h1:U2DbXTB7Me2S2Y8rv3QKaCT1Xz5t2DCzwqkWYpOgDn4=
 github.com/rsteube/carapace-shlex v0.1.2 h1:ZKjhIfXoCkEnzensMglTaLbkNOaLkmM8SCRshpJKx6s=
